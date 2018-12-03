@@ -1,0 +1,18 @@
+{
+  "name": "phaser3-starter",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Tim Rice <timrice@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "parcel serve public/index.html --port 5000 --open --no-hmr"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.10.3",
+    "phaser3-docs": "https://github.com/photonstorm/phaser3-docs",
+    "typescript": "^3.2.1"
+  },
+  "dependencies": {
+    "phaser": "^3.15.1"
+  }
+}
