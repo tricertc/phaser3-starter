@@ -9,7 +9,6 @@
   },
   "devDependencies": {
     "parcel-bundler": "^1.10.3",
-    "phaser3-docs": "https://github.com/photonstorm/phaser3-docs",
     "typescript": "^3.2.1"
   },
   "dependencies": {
