@@ -9,11 +9,14 @@ body {
   transform-style: preserve-3d;
 }
 
-canvas {
-  display: block;
+#game {
   position: relative;
-  margin: auto;
   top: 50%;
   transform: translateY(-50%)
+}
+
+#game canvas {
+  display: block;
+  margin: auto;
 }
 
