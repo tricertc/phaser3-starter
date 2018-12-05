@@ -1,4 +1,5 @@
 import 'phaser'
+import { hot, HotModule } from './lib/utils/hmr'
 
 import MainScene from './scenes/MainScene'
 
@@ -12,17 +13,4 @@ const game = new Phaser.Game({
   ]
 })
 
-declare var module: {
-  hot: {
-    dispose(callback: () => void): void
-  }
-}
-
-if (module.hot) {
-  const gameEl = document.getElementById(game.config.parent)
-  module.hot.dispose(() => {
-    while (gameEl && gameEl.firstChild) {
-      gameEl.removeChild(gameEl.firstChild)
-    }
-  })
-}
+hot(module as HotModule, game)
